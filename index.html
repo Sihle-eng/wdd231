@@ -1,39 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DocumentSihle</title>
+    <title>WDD231 | Web Fronted Development I</title>
+    <meta name="description" content="Designing a home page ">
+    <meta name="author" content="Sihlelelweyinkhosi Mchobokazi">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="scripts/activicty.js" defer></script>
 </head>
+
 <body>
     <header>
-        <img src="images/home.svg" alt="Site Icon" width="512" height="512">
-        <span>Sihle's Site Title</span>
-        <button id="ham-btn" class="hamburger"></button>
+        <img src="images/home.svg" alt="Site Logo" width="" height="">
+        <span>Sihle Name</span>
+        <button id="ham-b" class="hamburger"></button>
     </header>
-    <nav id="nav-bar" class="navigation">
+    <nav id="nav-b" class="navigation">
         <ul>
-            <li ><a href="#">News $ Events</a></li>
-            <li class="current"><a href="#">Dedicated Temples</a></li>
-            <li><a href="#">Announced Temples</a></li>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Final</a></li>
         </ul>
     </nav>
     <main>
-        <h1>Dedicate Temples</h1>
+        <h1>Home</h1>
+        <div class="intro">
+            <section class="about-me">
+                <h2>About Me</h2>
+                <p>
+                    Hello, my name is Sihle Mchobokazi. I am currently studying Web Development at BYU-Pathway
+                    Worldwide. I am excited to learn more about web development and enhance my skills in this field.
+                </p>
+            </section>
+            <section class="student-photo">
+                <h2>Student Photo</h2>
+                <img src="images/photo.webp" alt="Student Photo" width="300" height="400">
+            </section>
+        </div>
+        <section class="certificate">
+            <h2>Web Certificate Courses</h2>
+            <div class="certificate-container">
+                <h3 class="filter-btn" data-category="all">All</h3>
+                <h3 class="filter-btn" data-category="cse">CSE</h3>
+                <h3 class="filter-btn" data-category="wdd">WDD</h3>
+            </div>
+                <p id="totalCredits">Total Credits: 0</p>
+            <div class="certificate-courses" id="course-list">
+                <div class="course-b" data-category="wdd">
+                    <p>WDD130</p>
+                </div>
+                <div class="course-b" data-category="wdd">
+                    <p>WDD131</p>
+                </div>
+                <div class="course-b" data-category="wdd">
+                    <p>WDD231</p>
+                </div>
+                <div class="course-b" data-category="cse">
+                    <p>CSE110</p>
+                </div>
+                <div class="course-b" data-category="cse">
+                    <p>CSE210</p>
+                </div>
+                <div class="course-b" data-category="cse">
+                    <p>CSE111</p>
+                </div>
+            </div>
+
+        </section>
     </main>
     <footer>
         <div class="social">
-            <a href="https://www.facebook.com/welcome.mchobokazi/" target="_blank"><img src="images/facebook.svg" alt="facebook" width="16" height="16" ></a>
-            <a href="https://github.com/Sihle-eng" target="_blank"><img src="images/github.svg" alt="Github" width="16" height="16"></a>
-            <a href="https://www.linkedin.com/in/welcome-mchobokazi-/" target="_blank"><img src="images/linkedin.svg" alt="Linkedin" width="16" height="16"></a>
-            <a href="https://www.instagram.com/welcome_mchobokazi/" target="_blank"><img src="images/instagram.svg" alt="Instagram" width="16" height="16"></a>
+            <a href="https://www.facebook.com/welcome.mchobokazi/" target="_blank"><img src="images/facebook.svg"
+                    alt="facebook" width="16" height="16"></a>
+            <a href="https://github.com/Sihle-eng" target="_blank"><img src="images/github.svg" alt="Github" width="16"
+                    height="16"></a>
+            <a href="https://www.linkedin.com/in/welcome-mchobokazi-/" target="_blank"><img src="images/linkedin.svg"
+                    alt="Linkedin" width="16" height="16"></a>
+            <a href="https://www.instagram.com/welcome_mchobokazi/" target="_blank"><img src="images/instagram.svg"
+                    alt="Instagram" width="16" height="16"></a>
         </div>
-        <p>copright</p>
-        <p>Last modified</p>
+        <p><span id="currentYear"></span></p>
+        <p><span id="lastModified"></span></p>
     </footer>
-    <script src="scripts/navigation.js"></script>
 </body>
+
 </html>

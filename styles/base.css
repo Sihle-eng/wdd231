@@ -6,27 +6,32 @@ header {
     border-bottom: solid 1px #ddd;
     column-gap: 8px;
 }
+
 header img {
     display: block;
     width: 100%;
     height: auto;
     padding-bottom: 5px;
 }
+
 header span {
     font-size: 1.2em;
-    color: #3D4058;
+    color: black;
 }
+
 .hamburger {
     background: none;
     border: none;
-    color: #3D4058;
+    color: black;
     cursor: pointer;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 .hamburger::before {
     content: "\2630";
     font-size: 2rem;
 }
+
 .hamburger.show::before {
     content: "\00D7";
 }
@@ -34,28 +39,35 @@ header span {
 .navigation {
     display: none;
 }
+
 .navigation.show {
     display: block;
 }
+
 .navigation ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    background-color: black;
 
 }
+
 .navigation a {
     display: block;
     padding: .8rem 10px;
-    color: #3D4058;
+    color: #ccc;
     text-decoration: none;
     border-bottom: solid 1px #ddd;
+    /* background-color: black; */
 }
-.navigation li.current{
-    background-color: #eee;
-}
+
+/* .navigation li.current {
+    /* background-color: #eee; */
+
 .navigation a:hover {
-    background-color: #E07A5F;
+    background-color: grey;
 }
+
 h1 {
     margin-left: 10px;
 }
@@ -65,12 +77,14 @@ footer {
     padding: 1rem 10px;
     text-align: center;
 }
+
 .social {
     display: flex;
     justify-content: center;
     column-gap: 8px;
 
 }
+
 .social a {
     display: flex;
     justify-content: center;
@@ -81,11 +95,133 @@ footer {
     border-radius: 22px;
 
 }
+
 .social img {
     width: 22px;
     height: 22px;
 
 }
+
 .social a:hover {
     background-color: #ddd;
+}
+
+.intro {
+    grid-template-columns: 1fr;
+    height: auto;
+    gap: 16px;
+}
+
+.about-me,
+.student-photo {
+    background-color: lightgrey;
+    padding: 0;
+    border-radius: 8px;
+}
+
+.about-me {
+    margin-bottom: 20px;
+    height: 300px;
+}
+
+.about-me p {
+    margin-left: 10px;
+}
+
+.student-photo {
+    margin-bottom: 20px;
+    height: 200px;
+    margin-bottom: 30px;
+}
+.student-photo img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1rem;
+    background-color: lightgrey;
+    border-radius: 8px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+.student-photo img {
+    max-width: 100%;
+    height: 200px;
+    display: block;
+    object-fit: contain;
+}
+
+.about-me h2,
+.student-photo h2,
+.certificate h2 {
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0.5rem;
+    border-radius: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+.certificate-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 20px 10px;
+}
+
+.certificate-container h3 {
+    margin: 0;
+    padding: 0.8rem;
+    background-color: lightgray;
+    color: black;
+    text-align: center;
+    font-size: 1.2rem;
+    border-radius: 6px;
+}
+
+.certificate-courses {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 10px;
+    align-items: center;
+}
+
+.course-b {
+    background-color: lightgray;
+    padding: 1rem;
+    width: 80%;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.course-b p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.filter-btn {
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 10px;
+    padding: 5px 10px;
+    background-color: #eee;
+    border-radius: 5px;
+}
+
+.filter-btn:hover {
+    background-color: #ddd;
+}
+
+.course-b {
+    margin: 5px 0;
+}
+#totalCredits {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #0f0e0e;
 }
