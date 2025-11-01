@@ -131,8 +131,9 @@ footer {
 .student-photo {
     margin-bottom: 20px;
     height: 200px;
+    margin-bottom: 30px;
 }
-.student-photo {
+.student-photo img {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -150,28 +151,6 @@ footer {
     height: 200px;
     display: block;
     object-fit: contain;
-}
-@media screen and (max-width: 300px) {
-    .intro {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .student-photo,
-    .about-me {
-        height: auto;
-        padding: 1rem;
-    }
-}
-.student-photo h2 {
-    width: 100%;
-    box-sizing: border-box;
-    margin: 0 0 1rem 0;
-    padding: 0.5rem;
-    background-color: black;
-    color: white;
-    text-align: center;
 }
 
 .about-me h2,
