@@ -1,9 +1,0 @@
-.navigation {
-    display: none;
-}
-.navigation show {
-    display: block;
-}
-.navigation ul {
-    display: flex;
-}
