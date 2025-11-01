@@ -165,7 +165,6 @@ footer {
     width: 100%;
     box-sizing: border-box;
 }
-
 .certificate-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
