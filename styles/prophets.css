@@ -1,0 +1,64 @@
+/* Base styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7fa;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Container for all cards */
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Individual card styling */
+section {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+section:hover {
+    transform: scale(1.02);
+}
+
+/* Heading style */
+section h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+/* Paragraphs for birth info */
+section p {
+    font-size: 0.95rem;
+    margin: 6px 0;
+    color: #555;
+}
+
+/* Image styling */
+section img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #777;
+}
