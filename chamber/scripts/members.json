@@ -5,7 +5,7 @@
             "address": "123 Main Street, Mbabane",
             "phone": "+268 2404 1234",
             "website": "https://sunrisecafe.net/all-day-menu",
-            "image": "sunrise-cafe.png",
+            "image": "images/sunrise.webp",
             "membership": 3,
             "description": "A cozy spot for breakfast and community gatherings."
         },
@@ -14,7 +14,7 @@
             "address": "45 Innovation Drive, Manzini",
             "phone": "+268 2505 5678",
             "website": "https://technovasolutions.io/",
-            "image": "",
+            "image": "images/tech.webp",
             "membership": 2,
             "description": "IT consulting and software development firm."
         },
@@ -23,7 +23,7 @@
             "address": "78 Eco Lane, Mbabane",
             "phone": "+268 2404 7890",
             "website": "https://greenyle.site/about/",
-            "image": "greenleaf.png",
+            "image": "images/green.webp",
             "membership": 1,
             "description": "Organic produce and sustainable farming education."
         },
@@ -32,7 +32,7 @@
             "address": "9 Wellness Blvd, Manzini",
             "phone": "+268 2505 1122",
             "website": "https://swatipages.com/listing/the-fitness-zone-ezulwini-eswatini/",
-            "image": "fitness-club.png",
+            "image": "images/gym.webp",
             "membership": 2,
             "description": "Health and fitness center with personal training."
         },
@@ -41,7 +41,7 @@
             "address": "101 Design Street, Mbabane",
             "phone": "+268 2404 3344",
             "website": "https://www.theroyalprints.com/",
-            "image": "royal-prints.png",
+            "image": "images/Royal.webp",
             "membership": 3,
             "description": "Custom printing and branding services."
         },
@@ -50,7 +50,7 @@
             "address": "56 Learning Way, Manzini",
             "phone": "+268 2505 7788",
             "website": "https://www.edupark.ac.za/about-us/",
-            "image": "eduspark.png",
+            "image": "images/edu.webp",
             "membership": 1,
             "description": "Private tutoring and academic enrichment programs."
         },
@@ -59,7 +59,7 @@
             "address": "33 Knowledge Ave, Mbabane",
             "phone": "+268 2404 5566",
             "website": "https://www.africanadvice.com/1240328/Books_And_Booksellers/Swaziland/Websters_Book_Shop/",
-            "image": "bookstore.png",
+            "image": "images/book.webp",
             "membership": 2,
             "description": "Local bookstore with community events and author talks."
         }
