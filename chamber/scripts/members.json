@@ -4,7 +4,7 @@
             "name": "Sunrise Café",
             "address": "123 Main Street, Mbabane",
             "phone": "+268 2404 1234",
-            "website": "https://sunrisecafe.com",
+            "website": "https://sunrisecafe.net/all-day-menu",
             "image": "sunrise-cafe.png",
             "membership": 3,
             "description": "A cozy spot for breakfast and community gatherings."
@@ -13,7 +13,7 @@
             "name": "TechNova Solutions",
             "address": "45 Innovation Drive, Manzini",
             "phone": "+268 2505 5678",
-            "website": "https://technova.io",
+            "website": "https://technovasolutions.io/",
             "image": "",
             "membership": 2,
             "description": "IT consulting and software development firm."
@@ -22,7 +22,7 @@
             "name": "GreenLeaf Organics",
             "address": "78 Eco Lane, Mbabane",
             "phone": "+268 2404 7890",
-            "website": "https://greenleaf.org",
+            "website": "https://greenyle.site/about/",
             "image": "greenleaf.png",
             "membership": 1,
             "description": "Organic produce and sustainable farming education."
@@ -31,7 +31,7 @@
             "name": "Eswatini Fitness Club",
             "address": "9 Wellness Blvd, Manzini",
             "phone": "+268 2505 1122",
-            "website": "https://eswatinifitness.com",
+            "website": "https://swatipages.com/listing/the-fitness-zone-ezulwini-eswatini/",
             "image": "fitness-club.png",
             "membership": 2,
             "description": "Health and fitness center with personal training."
@@ -40,7 +40,7 @@
             "name": "Royal Prints",
             "address": "101 Design Street, Mbabane",
             "phone": "+268 2404 3344",
-            "website": "https://royalprints.biz",
+            "website": "https://www.theroyalprints.com/",
             "image": "royal-prints.png",
             "membership": 3,
             "description": "Custom printing and branding services."
@@ -49,7 +49,7 @@
             "name": "EduSpark Academy",
             "address": "56 Learning Way, Manzini",
             "phone": "+268 2505 7788",
-            "website": "https://eduspark.ac.sz",
+            "website": "https://www.edupark.ac.za/about-us/",
             "image": "eduspark.png",
             "membership": 1,
             "description": "Private tutoring and academic enrichment programs."
@@ -58,7 +58,7 @@
             "name": "Mbabane Bookstore",
             "address": "33 Knowledge Ave, Mbabane",
             "phone": "+268 2404 5566",
-            "website": "https://mbabanebooks.com",
+            "website": "https://www.africanadvice.com/1240328/Books_And_Booksellers/Swaziland/Websters_Book_Shop/",
             "image": "bookstore.png",
             "membership": 2,
             "description": "Local bookstore with community events and author talks."
