@@ -377,3 +377,148 @@ footer {
     color: #888;
     margin: 0.25rem 0;
 }
+/* base.css additions */
+.hero {
+    background-image: linear-gradient(rgba(33, 28, 46, 0.324), rgba(0, 0, 0, 0.5)), url('images/hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #495057;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #666;
+}
+
+.current-events,
+.weather,
+.spotlights {
+    padding: 10px 5px;
+    max-width: 1100px;
+    margin: 0 auto;
+    /* margin-top: 2px; */
+}
+
+.current-events h2,
+.weather h2,
+.spotlights h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.events-container,
+.spotlight-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.event-card,
+.spotlight-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.event-date {
+    color: #666;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.weather-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+#current-weather,
+#forecast {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#current-weather h3,
+#forecast h2 {
+    text-align: center;
+}
+
+.weather-icon {
+    font-size: 3rem;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.temperature {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.day-forecast {
+    display: flex;
+    justify-content: space-between;
+}
+
+.day-forecast {
+    text-align: center;
+    flex: 1;
+}
+
+.spotlight-card .contact,
+.spotlight-card .phone {
+    margin-top: 10px;
+    color: #666;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .weather-container {
+        grid-template-columns: 1fr;
+    }
+
+    .day-forecasts {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+}
+.card {
+    text-align: center;
+}

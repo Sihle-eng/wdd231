@@ -46,7 +46,7 @@ const listViewBtn = LIST_VIEW_IDS.map(id => $(id)).find(Boolean) || null;
 const membersContainer = $(MEMBERS_CONTAINER_ID);
 
 if (!membersContainer) {
-    console.warn('membersContainer not found. Ensure an element with id="membersContainer" exists.');
+    // console.warn('membersContainer not found. Ensure an element with id="membersContainer" exists.');
 } else {
 
     // ensure initial class
