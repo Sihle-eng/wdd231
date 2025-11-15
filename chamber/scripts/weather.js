@@ -7,7 +7,7 @@ const myKey = "ee6e6ef5516648a9411c2a935e8e7309";
 const myLat = "-26.326054489207984";
 const myLong = "31.142506602517347";
 
-const myUrl = `//api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLong}&appid=${myKey}&units=imperial`;
+const myUrl = `//api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLong}&appid=${myKey}&units=metric`;
 
 async function fetchCurrentWeather() { // Renamed function
     try {
@@ -72,7 +72,7 @@ function displayForecastResults(data) {
         }
     });
 
-    dailyForecasts.forEach((day, index) => {
+    dailyForecasts.forEach((day) => {
         const date = new Date(day.dt * 1000).toDateString();
         const icon = `https://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png`;
         const description = day.weather[0].description;
