@@ -234,19 +234,19 @@ footer {
     margin-bottom: 0;
 }
 
-.member-info h3 {
+/* .member-info h3 {
     margin: 0 0 0.5rem 0;
     color: var(--primary-color);
-}
+} */
 
 .member-info p {
     margin: 0.25rem 0;
 }
 
-.member-address,
+/* .member-address,
 .member-phone {
     color: #666;
-}
+} */
 
 .member-website a {
     color: lightblue;
