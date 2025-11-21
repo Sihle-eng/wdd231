@@ -24,6 +24,7 @@
         rel="stylesheet">
     <link rel="icon" href="images/favicon.ico">
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/join.js" defer></script>
 </head>
 
 <body>
@@ -73,7 +74,8 @@
                     </div>
                     <div class="form-group">
                         <label for="phone" class="required">Mobile Phone</label>
-                        <input type="tel" id="phone" name="phone" required autocomplete="phone"  placeholder="+267 7xxxxxxx" title="Enter your phone number">
+                        <input type="tel" id="phone" name="phone" required autocomplete="tel-national"
+                            placeholder="+267 7xxxxxxx" title="Enter your phone number">
                     </div>
                     <div class="form-group">
                         <label for="organization" class="required">Business/Organization Name</label>
@@ -83,7 +85,7 @@
                     <div class="form-group">
                         <label for="membership-level" class="required">Membership Level</label>
                         <select id="membership-level" name="membership-level" required
-                            title="Select a membership level">\
+                            title="Select a membership level">
                             <option value="">Select a membership level</option>
                             <option value="np">NP Membership(Non Profit- No Fee)</option>
                             <option value="bronze">Bronze Membership</option>
@@ -98,7 +100,7 @@
                     </div>
                     <input type="hidden" id="timestamp" name="timestamp">
                     <button type="submit">Join Us</button>
-                    <script src="scripts/join.js" defer></script>
+
 
                 </form>
                 <div class="membership-cards">
