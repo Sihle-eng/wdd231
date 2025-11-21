@@ -263,3 +263,35 @@ try {
 } catch (e) {
     console.error('Footer update failed:', e);
 }
+
+
+// Timestamp when page loads
+document.addEventListener("DOMContentLoaded", () => {
+  const links = document.querySelectorAll(".card-link");
+    const closeButtons = document.querySelectorAll(".close-modal");
+
+  // Open modal when clicking "Learn More"
+  links.forEach(link => {
+        link.addEventListener("click", e => {
+            e.preventDefault();
+            const modalId = link.getAttribute("data-modal");
+            document.getElementById(modalId).style.display = "block";
+        });
+  });
+
+  // Close modal when clicking the × button
+  closeButtons.forEach(btn => {
+        btn.addEventListener("click", () => {
+            btn.closest(".modal").style.display = "none";
+        });
+  });
+
+  // Close modal when clicking outside the modal content
+  window.addEventListener("click", e => {
+        document.querySelectorAll(".modal").forEach(modal => {
+            if (e.target === modal) {
+                modal.style.display = "none";
+            }
+        });
+  });
+});

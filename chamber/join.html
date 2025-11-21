@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership Application | Chamber of Commerce</title>
+    <meta name="description"
+        content="Join our Chamber of Commerce to connect with local businesses, access resources, and grow your enterprise.">
+    <meta name="author" content="Sihlelelweyinkhosi Mchobokazi">
+    <meta property="og:title" content="Chamber of Commerce Home">
+    <meta property="og:description"
+        content="Connect with local businesses and organizations through our chamber directory.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="http://127.0.0.1:5500/chamber/images/home.svg.preview">
+    <meta property="og:url" content="http://127.0.0.1:5500/chamber/index.html">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=SUSE+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+    <script src="scripts/navigation.js" defer></script>
+    <!-- <script src="scripts/weather.js" defer></script> -->
+</head>
+
+<body>
+    <header>
+        <img src="images/home.svg" alt="Site Logo" width="16" height="16">
+        <span>Commerce Chamber</span>
+        <button id="ham-b" class="hamburger"></button>
+    </header>
+    <nav id="nav-b" class="navigation">
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="container">
+            <h1>Chamber of Commerce Membership</h1>
+            <p>Join our community of businesses and organizations</p>
+        </div>
+
+        <div class="container">
+            <div class="form-container">
+                <form method="get" action="thankyou.html" id="membership-form">
+                    <div class="form-group">
+                        <label for="first" class="required">First Name</label>
+                        <input type="text" id="first" name="first" required autocomplete="given-name"
+                            title="Enter your first name">
+                    </div>
+                    <div class="form-group">
+                        <label for="last" class="required">Last Name</label>
+                        <input type="text" id="last" name="last" required autocomplete="family-name"
+                            title="Enter your last name">
+                    </div>
+                    <div class="form-group">
+                        <label for="title">Organizational Title</label>
+                        <input type="text" id="title" name="title" autocomplete="organization-title"
+                            pattern="[A-Za-z\s\-]{7,}"
+                            title="Enter your organizational title(minimun 7 characters, only letters, hyphens, and spaces allowed)">
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="required">Email Address</label>
+                        <input type="email" id="email" name="email" required autocomplete="email"
+                            placeholder="example@domain.com" title="Enter your email address">
+                    </div>
+                    <div class="form-group">
+                        <label for="organization" class="required">Business/Organization Name</label>
+                        <input type="text" id="organization" name="organization" required autocomplete="organization"
+                            title="Enter your business or organization name">
+                    </div>
+                    <div class="form-group">
+                        <label for="membership-level" class="required">Membership Level</label>
+                        <select id="membership-level" name="membership-level" required
+                            title="Select a membership level">\
+                            <option value="">Select a membership level</option>
+                            <option value="np">NP Membership(Non Profit- No Fee)</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Business/Organization Description</label>
+                        <textarea id="description" name="description" rows="4"
+                            title="Enter a description of your business or organization"></textarea>
+                    </div>
+                    <input type="hidden" id="timestamp" name="timestamp">
+                    <button type="submit">Join Us</button>
+                    <script>
+                        document.addEventListener("DOMContentLoaded", function () {
+                            const timestampField = document.getElementById("timestamp");
+                            if (timestampField) {
+                                // Set current time in ISO format
+                                timestampField.value = new Date().toISOString();
+                            }
+                        });
+                    </script>
+
+                </form>
+                <div class="membership-cards">
+                    <div class="card">
+                        <h2>NP Membership</h2>
+                        <p>For non-profit organizations with no membership fees.</p>
+                        <a href="#" class="card-link" data-modal="modal-np">Learn more</a>
+                    </div>
+                    <div class="card">
+                        <h2>Bornze Membership</h2>
+                        <p>Entry-level membership with essential benefits</p>
+                        <a href="#" class="card-link" data-modal="modal-bronze">Learn More</a>
+                    </div>
+                    <div class="card">
+                        <h2>Silver Membership</h2>
+                        <p>Enhanced benefist for growing businesses.</p>
+                        <a href="#" class="card-link" data-modal="modal-silver">Learn More</a>
+                    </div>
+                    <div class="card">
+                        <h2>Gold Membership</h2>
+                        <p>Premium benefits for established organizations.</p>
+                        <a href="#" class="card-link" data-modal="modal-gold">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Np modal -->
+        <div class="modal" id="modal-np">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h3>NP Membership Benefits</h3>
+                <div class="cost">No Fee</div>
+                <ul class="benefits-list">
+                    <li>Listing in our non-profit directory</li>
+                    <li>Access to networking events</li>
+                    <li>Monthly newsletter resources</li>
+                    <li>Basic training resources</li>
+                    <li>Community volunteer opportunities/li>
+                    <li>Access to grant information database</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Bronze modal -->
+        <div class="modal" id="modal-bronze">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h3>Bronze Membership Benefits</h3>
+                <div class="cost">$250/year</div>
+                <ul class="benefits-list">
+                    <li>All NP membership benefits</li>
+                    <li>Business listing in our online directory</li>
+                    <li>10&% discounts on chamber event</li>
+                    <li>Access to business workshops</li>
+                    <li>Monthly networking mixers</li>
+                    <li>Member-to-member discounts</li>
+                    <li>Social media mentions</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Silver Modal -->
+        <div class="modal" id="modal-silver">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h2>Silver Membership Benefits</h2>
+                <div class="cost">$500/year</div>
+                <ul class="benefits-list">
+                    <li>All Bronze Membership benefits</li>
+                    <li>Enhanced directory listing with logo</li>
+                    <li>25% discount on chamber events</li>
+                    <li>Priority registration for workshops</li>
+                    <li>Exclusive silver member events</li>
+                    <li>Business spotlight opportunities</li>
+                    <li>Access to market research data</li>
+                    <li>Leadership development programs</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Gold Modal -->
+        <div class="modal" id="modal-gold">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h2>Gold Membership Benefits</h2>
+                <div class="cost">$1,000/year</div>
+                <ul class="benefits-list">
+                    <li>All Silver Membership benefits</li>
+                    <li>Premium directory listing with featured placement</li>
+                    <li>50% discount on chamber events</li>
+                    <li>Complimentary tickets to annual gala</li>
+                    <li>Home page spotlight rotation</li>
+                    <li>Executive networking opportunities</li>
+                    <li>VIP access to all chamber functions</li>
+                    <li>Dedicated account representative</li>
+                    <li>Speaking opportunities at events</li>
+                    <li>Annual business consultation</li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p>123 Main Street, City, State 12345</p>
+                <p>smchobokazi@byupathway.edu</p>
+                <p>+268-7890-9767</p>
+                <div class="social">
+                    <a href="https://www.facebook.com/welcome.mchobokazi/" target="_blank"><img
+                            src="images/facebook.svg" alt="facebook" width="16" height="16"></a>
+                    <a href="https://github.com/Sihle-eng" target="_blank"><img src="images/github.svg" alt="Github"
+                            width="16" height="16"></a>
+                    <a href="https://www.linkedin.com/in/welcome-mchobokazi-/" target="_blank"><img
+                            src="images/linkedin.svg" alt="Linkedin" width="16" height="16"></a>
+                    <a href="https://www.instagram.com/welcome_mchobokazi/" target="_blank"><img
+                            src="images/instagram.svg" alt="Instagram" width="16" height="16"></a>
+                </div>
+
+                <div class="footer-meta">
+                    <p id="currentYear"></p>
+                    <p id="lastModified"></p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
