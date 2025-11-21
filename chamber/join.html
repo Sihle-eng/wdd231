@@ -24,7 +24,6 @@
         rel="stylesheet">
     <link rel="icon" href="images/favicon.ico">
     <script src="scripts/navigation.js" defer></script>
-    <!-- <script src="scripts/weather.js" defer></script> -->
 </head>
 
 <body>
@@ -73,6 +72,10 @@
                             placeholder="example@domain.com" title="Enter your email address">
                     </div>
                     <div class="form-group">
+                        <label for="phone" class="required">Mobile Phone</label>
+                        <input type="tel" id="phone" name="phone" required autocomplete="phone"  placeholder="+267 7xxxxxxx" title="Enter your phone number">
+                    </div>
+                    <div class="form-group">
                         <label for="organization" class="required">Business/Organization Name</label>
                         <input type="text" id="organization" name="organization" required autocomplete="organization"
                             title="Enter your business or organization name">
@@ -95,15 +98,7 @@
                     </div>
                     <input type="hidden" id="timestamp" name="timestamp">
                     <button type="submit">Join Us</button>
-                    <script>
-                        document.addEventListener("DOMContentLoaded", function () {
-                            const timestampField = document.getElementById("timestamp");
-                            if (timestampField) {
-                                // Set current time in ISO format
-                                timestampField.value = new Date().toISOString();
-                            }
-                        });
-                    </script>
+                    <script src="scripts/join.js" defer></script>
 
                 </form>
                 <div class="membership-cards">
