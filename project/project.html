@@ -40,10 +40,10 @@
 
     <section>
         <h2>Color Scheme</h2>
-        <p>Primary color: <span style="color:#052b05;">#006400</span></p>
-        <p>Accent color: <span style="color: #706e62;">#FFD700</span></p>
-        <p>Background color: <span style="color:#F0F8FF;">#F0F8FF</span></p>
-        <p>Text color: <span style="color:#333333;">#333333</span>
+        <p>Primary color: <span style="color:#006400;">#006400</span></p>
+        <p>Accent color: <span style="color: #FFD700;">#FFD700</span></p>
+        <p>Background color: <span style="color:#f9f9f9;">#f9f9f9</span></p>
+        <!-- <p>Text color: <span style="color:#333333;">#333333</span> -->
     </section>
 
     <section>
@@ -51,6 +51,58 @@
         <p>Heading Font: <em>Montserrat</em> - clean and modern, used for titles and navigation.</p>
         <p>Body Font: <em>Roboto</em> - easy to read, used for paragraphs and descriptions.</p>
     </section>
+
+    <style>
+        /* styles.css */
+
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@400&display=swap');
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #ffffff;
+            color: #333333;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Montserrat', sans-serif;
+            color: #006400;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 1rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #006400;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #FFD700;
+        }
+
+        section {
+            margin-bottom: 2rem;
+            padding: 1rem;
+            border-left: 4px solid #FFD700;
+            background-color: #f9f9f9;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #006400;
+            color: #FFD700;
+        }
+    </style>
 
     <section>
         <h2>Project Structure</h2>
