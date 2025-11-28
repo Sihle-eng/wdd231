@@ -882,3 +882,10 @@ p {
 .place-card p {
     grid-area: description;
 }
+
+.visit-message {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #555;
+    margin: 20px 0;
+}
