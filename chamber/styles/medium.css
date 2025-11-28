@@ -1,10 +1,10 @@
-@media only screen and (min-width: 64rem) {
+@media only screen and (min-width: 38rem) {
 
-    header,
+    /* header,
     main,
     nav,
     footer {
-        max-width: 900px;
+        max-width: 700px;
         margin: 0 auto;
     }
 
@@ -34,11 +34,11 @@
         grid-template-columns: 2fr 1fr;
         gap: 20px;
         margin-bottom: 30px;
-        height: 400px;
+        height: 350px;
     }
 
     .grid-view {
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     }
 
     .form-container {
@@ -50,21 +50,30 @@
     }
 
     header h1 {
-        font-size: 1.6rem;
-    }
-
-    .confirmation h2 {
         font-size: 1.4rem;
     }
 
+    .confirmation h2 {
+        font-size: 1.2rem;
+    } */
+
+    /* Individual card */
     .place-card {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        /* centers horizontally */
-        text-align: center;
-        /* centers text */
-        padding: 1rem;
+        /* background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        overflow: hidden; */
+
+        /* display: grid; */
+        grid-template-areas:
+            "photograph name"
+            "photograph description"
+            "photograph location"
+    }
+    .place-card img {
+        width: 300px;
     }
 
 }
