@@ -825,18 +825,19 @@ p {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-    overflow: hidden;
     align-items: center;
-    max-width: 400px;
-    grid-template-columns: 1fr;
 
+    /* Grid layout */
     display: grid;
+    grid-template-columns: 1fr;
     grid-template-areas:
-    "name"
-    "photograph"
-    "description"
-    "location"
-    
+        "name"
+        "photograph"
+        "description"
+        "location";
+
+    /* Consistent spacing */
+    gap: 8px;
 }
 
 /* Hover effect */
@@ -845,49 +846,47 @@ p {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
-/* Image styling */
+/* Image styling - added responsive behavior */
 .place-card img {
     width: 100%;
-    height: auto;
+    height: 200px;
+    /* Fixed height or use min-height */
     object-fit: cover;
-    grid-area:photograph;
+    grid-area: photograph;
 }
 
 /* Title */
 .place-card h2 {
     font-size: 1.2rem;
-    margin: 12px;
+    margin: 12px 12px 4px;
     color: #333;
-    grid-area:name;
+    grid-area: name;
 }
 
 /* Address */
 .place-card address {
     font-style: normal;
     color: #666;
-    margin: 0 12px 8px;
-    display: block;
+    margin: 0 12px;
     text-align: center;
     grid-area: location;
 }
 
-/* Cost */
-.place-card p:nth-of-type(1) {
-    font-weight: bold;
-    color: #0077cc;
-    margin: 0 12px 8px;
-}
-
 /* Description */
-.place-card p:last-of-type {
-    margin: 0 12px 12px;
+.place-card .description {
+    margin: 0 12px;
     color: #444;
     line-height: 1.4;
-    /* grid-area: description; */
+    grid-area: description;
 }
 
-.place-card p {
-    grid-area: description;
+/* Cost - more specific selector */
+.place-card .cost {
+    font-weight: bold;
+    color: #0077cc;
+    margin: 0 12px;
+    grid-area: cost;
+    /* You might want to add this to your grid areas */
 }
 
 .visit-message {

@@ -66,5 +66,9 @@
         /* centers text */
         padding: 1rem;
     }
+    .place-card img {
+        width: 300px;
+
+    }
 
 }

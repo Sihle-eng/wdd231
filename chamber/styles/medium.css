@@ -1,71 +1,6 @@
 @media only screen and (min-width: 38rem) {
 
-    /* header,
-    main,
-    nav,
-    footer {
-        max-width: 700px;
-        margin: 0 auto;
-    }
-
-    header {
-        grid-template-columns: 24px auto;
-    }
-
-    .hamburger {
-        display: none;
-    }
-
-    .navigation {
-        display: block;
-        border-bottom: solid 1px #eee;
-    }
-
-    .navigation ul {
-        display: flex;
-    }
-
-    .navigation a {
-        border: none;
-    }
-
-    .intro {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        gap: 20px;
-        margin-bottom: 30px;
-        height: 350px;
-    }
-
-    .grid-view {
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    }
-
-    .form-container {
-        grid-template-columns: 2fr 1fr;
-    }
-
-    .membership-cards {
-        grid-template-columns: 1fr;
-    }
-
-    header h1 {
-        font-size: 1.4rem;
-    }
-
-    .confirmation h2 {
-        font-size: 1.2rem;
-    } */
-
-    /* Individual card */
     .place-card {
-        /* background: #fff;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        overflow: hidden;
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
-        overflow: hidden; */
-
         display: grid;
         grid-template-areas:
             "photograph name"
@@ -75,8 +10,8 @@
     .place-card img {
         grid-area: photograph;
         width: 300px;
-        /* height: auto; */
-        /* object-fit: cover; */
+        height: auto;
+        object-fit: cover;
     }
 
 
