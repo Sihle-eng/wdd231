@@ -66,14 +66,18 @@
         transition: transform 0.2s ease, box-shadow 0.2s ease;
         overflow: hidden; */
 
-        /* display: grid; */
+        display: grid;
         grid-template-areas:
             "photograph name"
             "photograph description"
             "photograph location"
     }
     .place-card img {
+        grid-area: photograph;
         width: 300px;
+        /* height: auto; */
+        /* object-fit: cover; */
     }
+
 
 }

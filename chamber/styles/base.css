@@ -353,6 +353,9 @@ footer {
     color: #888;
     margin: 0.25rem 0;
 }
+.spotlight-card h3 {
+    text-align: center;
+}
 
 /* base.css additions */
 .hero {
@@ -823,6 +826,8 @@ p {
     overflow: hidden;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     overflow: hidden;
+    align-items: center;
+    grid-template-columns: 1fr;
 
     display: grid;
     grid-template-areas:
