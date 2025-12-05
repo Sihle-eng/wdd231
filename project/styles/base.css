@@ -437,6 +437,7 @@ copyright,
     opacity: 1;
     z-index: 1;
 }
+
 .slider-track {
     position: relative;
     width: 100%;
@@ -464,6 +465,7 @@ copyright,
     height: 100%;
     object-fit: cover;
 }
+
 .image-slider {
     position: relative;
 }
@@ -579,6 +581,7 @@ copyright,
         font-size: clamp(1.4rem, 6vw, 2rem);
     }
 }
+
 /* Compact container */
 .right-column {
     display: flex;
@@ -778,9 +781,11 @@ copyright,
     margin: var(--space-8) 0;
     box-shadow: var(--shadow-md);
 }
+
 .filters-section h2 {
     text-align: center;
 }
+
 .filters {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -838,11 +843,12 @@ copyright,
     color: #555;
     margin: 20px 0;
 }
+
 /* Center text inside destinations section */
 .destinations-section {
     padding: 0 2rem;
     text-align: center;
-  
+
 }
 
 /* Stats Section - horizontal layout */
@@ -1038,7 +1044,7 @@ copyright,
 .form-group select:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color:var(--color-primary);
+    border-color: var(--color-primary);
     box-shadow: 0 0 0 3px rgba(0, 119, 73, 0.1);
 }
 
@@ -1141,7 +1147,7 @@ copyright,
 .faq-icon {
     font-size: 1.5rem;
     font-weight: bold;
-    color:var(--color-primary);
+    color: var(--color-primary);
     transition: transform 0.3s;
 }
 
@@ -1149,7 +1155,7 @@ copyright,
     padding: 0;
     max-height: 0;
     overflow: hidden;
-    background-color:var(--color-white);
+    background-color: var(--color-white);
     transition: max-height 0.3s ease, padding 0.3s ease;
 }
 
@@ -1180,7 +1186,7 @@ copyright,
     justify-content: center;
     text-align: center;
     color: var(--color-white);
-    background:var(--color-secondary) ;
+    background: var(--color-secondary);
     border-radius: 8px;
     overflow: hidden;
     padding: 2rem;
@@ -1244,6 +1250,7 @@ copyright,
     outline: none;
     border-color: var(--color-secondary);
 }
+
 #resetFilters {
     padding: 0.5rem 1rem;
     border: 1px solid #ccc;
@@ -1252,9 +1259,116 @@ copyright,
     color: #333;
     font-size: 0.9rem;
     cursor: pointer;
-    transition:  0.2s ease;
+    transition: 0.2s ease;
 }
 
 #resetFilters:hover {
     background: #f0f0f0;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: #fff;
+    margin: auto;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 400px;
+    text-align: left;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Confirmation css */
+/* General container */
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #333;
+}
+.container h1 {
+    text-align: center;
+}
+
+/* Confirmation message */
+.confirmation {
+    background: #f0f8ff;
+    border: 1px solid #cce3f0;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.confirmation h2 {
+    margin-top: 0;
+    color: var(--color-primary);
+}
+
+.confirmation p {
+    margin: 0.5rem 0 0;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* User data section */
+.user-data {
+    background: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.data-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.data-item:last-child {
+    border-bottom: none;
+}
+
+.data-label {
+    font-weight: 600;
+    color: #555;
+}
+
+.data-item div[id^="display-"] {
+    color: var(--color-primary);
+    font-weight: 500;
+}
+
+/* Back link */
+.back-link {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    background: var(--color-primary);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background 0.2s ease;
 }

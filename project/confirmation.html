@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation Page | Explore South Africa</title>
+    <meta name="description"
+        content="Designing a home page that is responsive and includes navigation, images. This page showcases my skills in HTML and CSS as part of the Web Development Certificate program at BYU-Pathway Worldwide. Makes use of external stylesheets and Google Fonts for enhanced typography.">
+    <meta name="author" content="Sihlelelweyinkhosi Mchobokazi">
+    <meta property="og:title" content="WDD231 | Web Fronted Development I">
+    <meta property="og:description" content="this is my home page for my Explore South Africa project">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/photo.webp">
+    <meta property="og:url" content="index.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=SUSE+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="images/favi.ico">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <script src="scripts/confirm.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Explore South Africa</h1>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="confirmation">
+            <h2>Thank You for Your Message!</h2>
+            <p>We have received your message and will review it shortly. You should receive a
+                confirmation email within 24 hours.</p>
+        </div>
+        <div class="user-data">
+            <div class="data-item">
+                <div class="data-label">Full Name:</div>
+                <div id="display-name">Loading...</div>
+            </div>
+            <div class="data-item">
+                <div class="data-label">Email:</div>
+                <div id="display-email">Loading...</div>
+            </div>
+            <div class="data-item">
+                <div class="data-label">Phone:</div>
+                <div id="display-phone">Loading...</div>
+            </div>
+            <div class="data-item">
+                <div class="data-label">Subject:</div>
+                <div id="display-subject">Loading...</div>
+            </div>
+            <div class="data-item">
+                <div class="data-label">Message:</div>
+                <div id="display-message">Loading...</div>
+            </div>
+            <div class="data-item">
+                <div class="data-label">Sent Date:</div>
+                <div id="display-timestamp">Loading...</div>
+            </div>
+        </div>
+        <a href="contact.html" class="back-link">Return to Application Form</a>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-column contact-info">
+                    <h3>Contact Information</h3>
+                    <p>123 Main Street, City, State 12345</p>
+                    <p><a href="mailto:smchobokazi@byupathway.edu">smchobokazi@byupathway.edu</a></p>
+                    <p><a href="tel:+26878909767">+268-7890-9767</a></p>
+
+                    <div class="social-icons" aria-label="Social links">
+                        <a href="https://www.facebook.com/welcome.mchobokazi/" target="_blank" rel="noopener noreferrer"
+                            aria-label="Facebook">
+                            <img src="images/facebook.svg" alt="Facebook" width="16" height="16">
+                        </a>
+                        <a href="https://github.com/Sihle-eng" target="_blank" rel="noopener noreferrer"
+                            aria-label="GitHub">
+                            <img src="images/github.svg" alt="GitHub" width="16" height="16">
+                        </a>
+                        <a href="https://www.linkedin.com/in/welcome-mchobokazi-/" target="_blank"
+                            rel="noopener noreferrer" aria-label="LinkedIn">
+                            <img src="images/linkedin.svg" alt="LinkedIn" width="16" height="16">
+                        </a>
+                        <a href="https://www.instagram.com/welcome_mchobokazi/" target="_blank"
+                            rel="noopener noreferrer" aria-label="Instagram">
+                            <img src="images/instagram.svg" alt="Instagram" width="16" height="16">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-column newsletter">
+                    <h3>Stay updated</h3>
+                    <p>Subscribe to our newsletter</p>
+                    <form id="newsletter-form" class="newsletter-form" novalidate>
+                        <label for="email" class="sr-only">Email address</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+
+                <div class="footer-column links">
+                    <h3>Quick links</h3>
+                    <ul class="footer-links" aria-label="Footer links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="destination.html">Destination</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p id="currentYear"></p>
+                <p id="lastModified"></p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+
+</html>

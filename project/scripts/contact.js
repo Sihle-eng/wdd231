@@ -122,55 +122,41 @@ document.addEventListener('DOMContentLoaded', function () {
         messageError.style.display = 'none';
     });
 
-    // Form submission
-    contactForm.addEventListener('submit', function (e) {
-        e.preventDefault();
 
-        // Validate all fields
-        const isNameValid = validateName();
-        const isEmailValid = validateEmail();
-        const isPhoneValid = validatePhone();
-        const isSubjectValid = validateSubject();
-        const isMessageValid = validateMessage();
-
-        // If all valid, submit form
-        if (isNameValid && isEmailValid && isPhoneValid &&
-            isSubjectValid && isMessageValid) {
-            
-            formSuccess.style.display = 'block';
-
-            setTimeout(function () {
-                contactForm.reset();
-                formSuccess.style.display = 'none';
-            }, 5000);
-
-            // Scroll to success message
-            formSuccess.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-        } else {
-            // Scroll to first error
-            const firstError = document.querySelector('.error-message[style*="display: block"]');
-            if (firstError) {
-                firstError.scrollIntoView({ behavior: 'smooth', block: 'center' });
-            }
-        }
-    });
-
-    // FAQ Accordion Functionality
+    // FAQ Modal Functionality
     const faqItems = document.querySelectorAll('.faq-item');
+    const faqModal = document.getElementById('faqModal');
+    const modalQuestion = document.getElementById('modal-question');
+    const modalAnswer = document.getElementById('modal-answer');
+    const closeBtn = faqModal.querySelector('.close');
 
     faqItems.forEach(item => {
         const question = item.querySelector('.faq-question');
+        const answer = item.querySelector('.faq-answer');
 
         question.addEventListener('click', function () {
-          
-            faqItems.forEach(otherItem => {
-                if (otherItem !== item && otherItem.classList.contains('active')) {
-                    otherItem.classList.remove('active');
-                }
-            });
+            // Fill modal with content
+            modalQuestion.textContent = question.textContent.replace('+', '').trim();
+            modalAnswer.textContent = answer.textContent.trim();
 
-       
-            item.classList.toggle('active');
+            // Show modal
+            faqModal.style.display = 'flex';
         });
     });
+
+    // Close modal when clicking X
+    closeBtn.addEventListener('click', function () {
+        faqModal.style.display = 'none';
+    });
+
+    // Close modal when clicking outside
+    window.addEventListener('click', function (e) {
+        if (e.target === faqModal) {
+            faqModal.style.display = 'none';
+        }
+    });
+
 });
+
+
+
