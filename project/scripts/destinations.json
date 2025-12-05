@@ -1,0 +1,166 @@
+{
+    "destinations": [
+        {
+            "id": 1,
+            "name": "Kruger National Park",
+            "location": "Mpumalanga & Limpopo",
+            "description": "One of Africa's largest game reserves, home to the Big Five (lion, leopard, rhino, elephant, buffalo) and over 500 bird species.",
+            "image": "images/Kruger.webp",
+            "rating": 4.9,
+            "category": "Wildlife & Nature"
+        },
+        {
+            "id": 2,
+            "name": "Table Mountain",
+            "location": "Cape Town",
+            "description": "Iconic flat-topped mountain offering panoramic views of Cape Town. Take the cable car or hike up for breathtaking scenery.",
+            "image": "images/table.webp",
+            "rating": 4.8,
+            "category": "Mountains & Views"
+        },
+        {
+            "id": 3,
+            "name": "Robben Island",
+            "location": "Western Cape",
+            "description": "UNESCO World Heritage Site where Nelson Mandela was imprisoned for 18 years. A powerful symbol of South Africa's struggle for freedom.",
+            "image": "images/robben.webp",
+            "rating": 4.7,
+            "category": "Historical"
+        },
+        {
+            "id": 4,
+            "name": "Victoria & Alfred Waterfront",
+            "location": "Cape Town",
+            "description": "Historic harbor with shopping, dining, entertainment, and stunning views of Table Mountain.",
+            "image": "images/victoria.webp",
+            "rating": 4.6,
+            "category": "Shopping & Dining"
+        },
+        {
+            "id": 5,
+            "name": "Blyde River Canyon",
+            "location": "Mpumalanga",
+            "description": "One of the largest canyons in the world, featuring the Three Rondavels, Bourke's Luck Potholes, and God's Window.",
+            "image": "images/Blyde.webp",
+            "rating": 4.8,
+            "category": "Nature & Scenery"
+        },
+        {
+            "id": 6,
+            "name": "Cape of Good Hope",
+            "location": "Cape Peninsula",
+            "description": "Most southwestern point of the African continent with dramatic cliffs, beaches, and diverse flora and fauna.",
+            "image": "images/CapeHope.webp",
+            "rating": 4.7,
+            "category": "Coastal & Nature"
+        },
+        {
+            "id": 7,
+            "name": "Addo Elephant National Park",
+            "location": "Eastern Cape",
+            "description": "Third largest national park in South Africa, home to over 600 elephants, lions, buffalo, and rhinos.",
+            "image": "images/Addo.webp",
+            "rating": 4.7,
+            "category": "Wildlife"
+        },
+        {
+            "id": 8,
+            "name": "Drakensberg Mountains",
+            "location": "KwaZulu-Natal",
+            "description": "UNESCO World Heritage Site with stunning peaks, ancient San rock art, and excellent hiking trails.",
+            "image": "images/Drakensberg.webp",
+            "rating": 4.8,
+            "category": "Mountains & Hiking"
+        },
+        {
+            "id": 9,
+            "name": "Garden Route",
+            "location": "Western Cape to Eastern Cape",
+            "description": "Scenic coastal route featuring forests, mountains, beaches, and charming towns like Knysna and Plettenberg Bay.",
+            "image": "images/Garden_route.webp",
+            "rating": 4.8,
+            "category": "Scenic Drive"
+        },
+        {
+            "id": 10,
+            "name": "Apartheid Museum",
+            "location": "Johannesburg",
+            "description": "Powerful museum documenting South Africa's apartheid history and the struggle for democracy.",
+            "image": "images/Apartheid.webp",
+            "rating": 4.9,
+            "category": "Historical"
+        },
+        {
+            "id": 11,
+            "name": "iSimangaliso Wetland Park",
+            "location": "KwaZulu-Natal",
+            "description": "South Africa's first UNESCO World Heritage Site, featuring coral reefs, wetlands, and diverse wildlife.",
+            "image": "images/iSimangaliso.webp",
+            "rating": 4.6,
+            "category": "Wildlife & Wetlands"
+        },
+        {
+            "id": 12,
+            "name": "Cradle of Humankind",
+            "location": "Gauteng",
+            "description": "UNESCO World Heritage Site with limestone caves containing fossils of ancient hominids.",
+            "image": "images/cradle.webp",
+            "rating": 4.5,
+            "category": "Historical & Archaeological"
+        },
+        {
+            "id": 13,
+            "name": "Sun City Resort",
+            "location": "North West",
+            "description": "Luxury resort complex featuring casinos, golf courses, water parks, and the Valley of Waves.",
+            "image": "images/SunCity.webp",
+            "rating": 4.4,
+            "category": "Entertainment & Resort"
+        },
+        {
+            "id": 14,
+            "name": "Kirstenbosch National Botanical Garden",
+            "location": "Cape Town",
+            "description": "World-renowned botanical garden at the foot of Table Mountain, showcasing indigenous South African plants.",
+            "image": "images/Kirstenbosch.webp",
+            "rating": 4.7,
+            "category": "Gardens & Nature"
+        },
+        {
+            "id": 15,
+            "name": "Soweto",
+            "location": "Johannesburg",
+            "description": "Historical township that played a key role in the anti-apartheid struggle, with sites like Vilakazi Street.",
+            "image": "images/Soweto.webp",
+            "rating": 4.6,
+            "category": "Cultural & Historical"
+        },
+        {
+            "id": 16,
+            "name": "Tsitsikamma National Park",
+            "location": "Garden Route",
+            "description": "Coastal national park with indigenous forests, dramatic coastline, and the famous Storms River Mouth.",
+            "image": "images/Tsitsikamma.webp",
+            "rating": 4.8,
+            "category": "Nature & Forests"
+        },
+        {
+            "id": 17,
+            "name": "Bo-Kaap",
+            "location": "Cape Town",
+            "description": "Colorful historical neighborhood known for its Cape Malay culture, cuisine, and brightly painted houses.",
+            "image": "images/Bo.webp",
+            "rating": 4.5,
+            "category": "Cultural & Architecture"
+        },
+        {
+            "id": 18,
+            "name": "Golden Mile",
+            "location": "Durban",
+            "description": "Popular beachfront promenade with warm Indian Ocean waters, entertainment, and dining options.",
+            "image": "images/golden_mile.webp",
+            "rating": 4.4,
+            "category": "Beaches & Entertainment"
+        }
+    ]
+}

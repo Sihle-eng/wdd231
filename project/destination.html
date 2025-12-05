@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Destinations in South Africa | Explore SA</title>
+    <meta name="description"
+        content="Designing a home page that is responsive and includes navigation, images. This page showcases my skills in HTML and CSS as part of the Web Development Certificate program at BYU-Pathway Worldwide. Makes use of external stylesheets and Google Fonts for enhanced typography.">
+    <meta name="author" content="Sihlelelweyinkhosi Mchobokazi">
+    <meta property="og:title" content="WDD231 | Web Fronted Development I">
+    <meta property="og:description" content="this is my destination page for my Explore South Africa project">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/photo.webp">
+    <meta property="og:url" content="index.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=SUSE+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="icon" href="images/favi.ico">
+    <script src="scripts/index.js" defer></script>
+    <script src="scripts/destinations.js" defer></script>
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="page-header">
+        <img src="images/south.svg" alt="South Africa flag icon" width="24" height="24" class="header-icon"
+            loading="lazy">
+        <span>Explore South Africa</span>
+        <button id="ham-b" class="hamburger"></button>
+    </header>
+
+    <!-- Navigation -->
+    <nav id="nav-b" class="navigation">
+        <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="destination.html">Destination</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero destinations-hero">
+        <div class="hero-content">
+            <h1 class="gradient-text">Discover South Africa</h1>
+            <p class="hero-subtitle">Explore 18+ amazing destinations across our beautiful rainbow nation</p>
+            <div class="hero-search">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchInput" placeholder="Search destinations...">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Filters -->
+        <section class="filters-section">
+            <h2>Filter Destinations</h2>
+            <div class="filters">
+                <div class="filter-group">
+                    <label for="categoryFilter">Category:</label>
+                    <select id="categoryFilter" class="form-control">
+                        <option value="all">All Categories</option>
+                        <option value="Wildlife & Nature">Wildlife & Nature</option>
+                        <option value="Historical">Historical</option>
+                        <option value="Mountains & Views">Mountains & Views</option>
+                        <option value="Cultural">Cultural</option>
+                        <option value="Beaches">Beaches</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="sortFilter">Sort by:</label>
+                    <select id="sortFilter" class="form-control">
+                        <option value="name">Name (A-Z)</option>
+                        <option value="rating">Rating (High to Low)</option>
+                        <option value="location">Location</option>
+                    </select>
+                </div>
+                <button id="resetFilters" class="btn btn-outline">
+                    <i class="fas fa-redo"></i> Reset Filters
+                </button>
+            </div>
+        </section>
+
+        <!-- Stats -->
+        <div class="stats">
+            <div class="stat-card">
+                <i class="fas fa-mountain"></i>
+                <div>
+                    <h3 id="totalDestinations">18</h3>
+                    <p>Destinations</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-star"></i>
+                <div>
+                    <h3>4.7</h3>
+                    <p>Average Rating</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                    <h3>9</h3>
+                    <p>Provinces Covered</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Destinations Grid -->
+        <section class="destinations-section">
+            <h2>Top Destinations in South Africa</h2>
+            <div class="loading" id="loading">
+                <div class="spinner"></div>
+                <p>Loading amazing destinations...</p>
+            </div>
+            <div class="destinations-grid" id="destinationsGrid">
+                <!-- Cards will be dynamically inserted here -->
+            </div>
+            <div class="no-results" id="noResults" style="display: none;">
+                <i class="fas fa-search"></i>
+                <h3>No destinations found</h3>
+                <p>Try adjusting your search or filters</p>
+            </div>
+        </section>
+
+        <!-- Featured Destination -->
+        <section class="featured-destination">
+            <div class="featured-content">
+                <h2>Featured Destination</h2>
+                <div class="featured-card" id="featuredCard">
+                    <!-- Featured content will be dynamically inserted -->
+                </div>
+            </div>
+        </section>
+        <div id="visit-message" class="visit-message"></div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-column contact-info">
+                    <h3>Contact Information</h3>
+                    <p>123 Main Street, City, State 12345</p>
+                    <p><a href="mailto:smchobokazi@byupathway.edu">smchobokazi@byupathway.edu</a></p>
+                    <p><a href="tel:+26878909767">+268-7890-9767</a></p>
+
+                    <div class="social-icons" aria-label="Social links">
+                        <a href="https://www.facebook.com/welcome.mchobokazi/" target="_blank" rel="noopener noreferrer"
+                            aria-label="Facebook">
+                            <img src="images/facebook.svg" alt="Facebook" width="16" height="16">
+                        </a>
+                        <a href="https://github.com/Sihle-eng" target="_blank" rel="noopener noreferrer"
+                            aria-label="GitHub">
+                            <img src="images/github.svg" alt="GitHub" width="16" height="16">
+                        </a>
+                        <a href="https://www.linkedin.com/in/welcome-mchobokazi-/" target="_blank"
+                            rel="noopener noreferrer" aria-label="LinkedIn">
+                            <img src="images/linkedin.svg" alt="LinkedIn" width="16" height="16">
+                        </a>
+                        <a href="https://www.instagram.com/welcome_mchobokazi/" target="_blank"
+                            rel="noopener noreferrer" aria-label="Instagram">
+                            <img src="images/instagram.svg" alt="Instagram" width="16" height="16">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-column newsletter">
+                    <h3>Stay updated</h3>
+                    <p>Subscribe to our newsletter</p>
+                    <form id="newsletter-form" class="newsletter-form" novalidate>
+                        <label for="email" class="sr-only">Email address</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+
+                <div class="footer-column links">
+                    <h3>Quick links</h3>
+                    <ul class="footer-links" aria-label="Footer links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="destination.html">Destination</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p id="currentYear"></p>
+                <p id="lastModified"></p>
+            </div>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>
